@@ -2,298 +2,724 @@
 
 <head>
 
-    <title>Pivot Wholesale - Privacy Policy</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-   
-    <style type="text/css">
-        @import url(https://themes.googleusercontent.com/fonts/css?kit=dpiI8CyVsrzWsJLBFKehGpLhv3qFjX7dUn1mYxfCXhI);
-        body {
-            color: #000000;
-            font-size: 11pt;
-            font-family: "Roboto";
-            font-style: normal;
-            background-color: #ffffff;
-            margin:    0 auto;
-            max-width: 900px;
-            padding: 72pt 72pt 72pt 72pt
-        }
-    </style>
-    
+        <title>Pivot Wholesale - Privacy Policy</title>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style type="text/css">
+                @import url(https://themes.googleusercontent.com/fonts/css?kit=dpiI8CyVsrzWsJLBFKehGpLhv3qFjX7dUn1mYxfCXhI);
+
+                body {
+                        color: #000000;
+                        padding: 72pt 72pt 72pt 72pt;
+                        font-size: 11pt;
+                        font-family: "Roboto";
+                        font-style: normal;
+                        background-color: #ffffff;
+                        margin: 0 auto;
+                        max-width: 900px;
+                }
+
+
+                /* BG */
+                #bg {
+                        -moz-transition: opacity 2s ease-in-out;
+                        -webkit-transition: opacity 2s ease-in-out;
+                        -ms-transition: opacity 2s ease-in-out;
+                        transition: opacity 2s ease-in-out;
+                        height: 100%;
+                        left: 0;
+                        opacity: 0.375;
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                        z-index: 1;
+                }
+
+                #bg div {
+                        -moz-transition: opacity 3s ease;
+                        -webkit-transition: opacity 3s ease;
+                        -ms-transition: opacity 3s ease;
+                        transition: opacity 3s ease;
+                        background-size: cover;
+                        height: 100%;
+                        left: 0;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        visibility: hidden;
+                        width: 150%;
+                }
+
+                #bg div.visible {
+                        -moz-animation: bg 45s linear infinite;
+                        -webkit-animation: bg 45s linear infinite;
+                        -ms-animation: bg 45s linear infinite;
+                        animation: bg 45s linear infinite;
+                        opacity: 1;
+                        visibility: visible;
+                        z-index: 1;
+                }
+
+                #bg div.visible.top {
+                        z-index: 2;
+                }
+
+                @media screen and (max-width: 1280px) {
+                        #bg div.visible {
+                                -moz-animation: bg 29.25s linear infinite;
+                                -webkit-animation: bg 29.25s linear infinite;
+                                -ms-animation: bg 29.25s linear infinite;
+                                animation: bg 29.25s linear infinite;
+                        }
+                }
+
+                @media screen and (max-width: 736px) {
+                        #bg div.visible {
+                                -moz-animation: bg 18s linear infinite;
+                                -webkit-animation: bg 18s linear infinite;
+                                -ms-animation: bg 18s linear infinite;
+                                animation: bg 18s linear infinite;
+                        }
+                }
+
+                #bg div:only-child {
+                        -moz-animation-direction: alternate !important;
+                        -webkit-animation-direction: alternate !important;
+                        -ms-animation-direction: alternate !important;
+                        animation-direction: alternate !important;
+                }
+
+                body.is-preload #bg {
+                        opacity: 0;
+                }
+
+                @-moz-keyframes bg {
+                        0% {
+                                -moz-transform: translateX(0);
+                                -webkit-transform: translateX(0);
+                                -ms-transform: translateX(0);
+                                transform: translateX(0);
+                        }
+
+                        100% {
+                                -moz-transform: translateX(-25%);
+                                -webkit-transform: translateX(-25%);
+                                -ms-transform: translateX(-25%);
+                                transform: translateX(-25%);
+                        }
+                }
+
+                @-webkit-keyframes bg {
+                        0% {
+                                -moz-transform: translateX(0);
+                                -webkit-transform: translateX(0);
+                                -ms-transform: translateX(0);
+                                transform: translateX(0);
+                        }
+
+                        100% {
+                                -moz-transform: translateX(-25%);
+                                -webkit-transform: translateX(-25%);
+                                -ms-transform: translateX(-25%);
+                                transform: translateX(-25%);
+                        }
+                }
+
+                @-ms-keyframes bg {
+                        0% {
+                                -moz-transform: translateX(0);
+                                -webkit-transform: translateX(0);
+                                -ms-transform: translateX(0);
+                                transform: translateX(0);
+                        }
+
+                        100% {
+                                -moz-transform: translateX(-25%);
+                                -webkit-transform: translateX(-25%);
+                                -ms-transform: translateX(-25%);
+                                transform: translateX(-25%);
+                        }
+                }
+
+                @keyframes bg {
+                        0% {
+                                -moz-transform: translateX(0);
+                                -webkit-transform: translateX(0);
+                                -ms-transform: translateX(0);
+                                transform: translateX(0);
+                        }
+
+                        100% {
+                                -moz-transform: translateX(-25%);
+                                -webkit-transform: translateX(-25%);
+                                -ms-transform: translateX(-25%);
+                                transform: translateX(-25%);
+                        }
+                }
+        </style>
+
 </head>
 
 <body>
-<h1 id="privacy-and-credit-information-policy">PRIVACY AND CREDIT INFORMATION POLICY</h1>
-<p>Pivot Wholesale Pty Ltd (ABN 73 683 108 750) (<strong>we</strong>, <strong>us</strong> or <strong>our</strong>), understands that protecting your personal information is important. This Privacy and Credit Information Policy sets out our commitment to protecting the privacy of personal information provided to us, or collected by us, when interacting with you. </p>
-<h2 id="the-information-we-collect">The information we collect</h2>
-<p><strong>Personal information</strong>: is information or an opinion, whether true or not and whether recorded in a material form or not, about an individual who is identified or reasonably identifiable. The types of personal information we may collect about you include:</p>
-<ul>
-<li><p><strong>Identity Data</strong> including your name, age, profession, professional registration number and photographic identification. </p>
-</li>
-<li><p><strong>Contact Data</strong> including your telephone number, address and email.</p>
-</li>
-<li><p><strong>Financial Data</strong> including bank account and payment card details.</p>
-</li>
-<li><p><strong>Background Verification Data</strong> including your government-issued identification details requested such as your AHPRA registration number, as part of our onboarding process to comply with our due diligence obligations, anti-money laundering laws and related ongoing monitoring commitments.</p>
-</li>
-<li><p><strong>Transaction Data</strong> including details about payments to you from us and from you to us and other details of products and services you have purchased from us or we have purchased from you.</p>
-</li>
-<li><p><strong>Technical and Usage Data</strong> when you access any of our websites, platforms or emails, details about your internet protocol (IP) address, login data, browser session and geo-location data, statistics on page views and sessions, device and network information, acquisition sources, search queries and/or browsing behaviour, access and use of our website (including through the use of Internet cookies, tracking pixels or analytics), and communications with our website.</p>
-</li>
-<li><p><strong>Profile Data</strong> including your username and password for our portal, purchases or orders you have made with us, and support requests you have made.  </p>
-</li>
-<li><p><strong>Interaction Data</strong> including information you provide to us when you participate in any interactive features, including surveys, contests, promotions, activities or events.  </p>
-</li>
-<li><p><strong>Marketing and Communications Data</strong> including your preferences in receiving marketing from us and our third parties and your communication preferences.</p>
-</li>
-<li><p><strong>Professional Data</strong> including where you are a worker of ours or applying for a role with us, your professional history such as your previous positions and professional experience, or whether you hold required authorisations or licences. </p>
-</li>
-</ul>
-<p><strong>Sensitive information</strong> is a sub-set of personal information that is given a higher level of protection. Sensitive information means information relating to your racial or ethnic origin, political opinions, religion, trade union or other professional associations or memberships, philosophical beliefs, sexual orientation or practices, criminal records, health information or biometric information. The types of sensitive information we collect include:</p>
-<ul>
-<li><p>where you apply for a role with us: results of criminal records checks and your professional registrations and associations (where applicable);</p>
-</li>
-<li><p>where you or the pharmacy you represent has an account with us, your professional registration details as a pharmacist</p>
-</li>
-</ul>
-<p><strong>Credit Information</strong>: is a term used throughout this Privacy and Credit Information Policy and refers to “credit information” and “credit eligibility information” as these terms are defined in the Privacy Act 1988 (Cth) (<strong>Privacy Act</strong>). </p>
-<p>The types of “credit information” we may collect about you include:</p>
-<ul>
-<li><p>your name, address, contact number and email address;</p>
-</li>
-<li><p>the fact that you applied for credit from us;</p>
-</li>
-<li><p>the amount of credit applied for by you </p>
-</li>
-<li><p>the amount of credit provided to you by us (if any);</p>
-</li>
-<li><p>the terms of payment of credit provided to you by us, including any credit term;</p>
-</li>
-<li><p>details of your payment history, including details of any default of payment by you;</p>
-</li>
-<li><p>information regarding credit that was provided to you that has otherwise been discharged;</p>
-</li>
-<li><p>information retrieved from any credit referees; </p>
-</li>
-<li><p>information regarding your personal insolvency; and</p>
-</li>
-<li><p>information about your involvement in any court proceedings.</p>
-</li>
-</ul>
-<p>The types of “credit eligibility information” we may collect about you from a credit reporting body include a credit report and a credit assessment score.</p>
-<h2 id="how-we-collect-personal-information">How we collect personal information</h2>
-<p>We collect personal information in a variety of ways, including:</p>
-<ul>
-<li><p>when you provide it directly to us, including face-to-face, over the phone, over email, or online;</p>
-</li>
-<li><p>when you complete a form, such as registering for any events or newsletters, or responding to surveys;</p>
-</li>
-<li><p>when you use any website we operate (including from any analytics and cookie providers or marketing providers. See the “Cookies” section below for more detail on the use of cookies); </p>
-</li>
-<li><p>from third parties, such as your employer or the pharmacy you represent; </p>
-</li>
-<li><p>from publicly available sources.</p>
-</li>
-</ul>
-<p>We collect credit information in a variety of ways, including:</p>
-<ul>
-<li><p>when you provide it directly to us, including through your completion of any credit application form provided by us or you entering an agreement with us for the supply of goods and/or services;</p>
-</li>
-<li><p>when you make payment of any amount of credit provided by us; or</p>
-</li>
-<li><p>from third parties, such as credit reporting bodies or from other credit providers, including any credit referees provided by you.</p>
-</li>
-</ul>
-<h2 id="why-we-collect-hold-use-and-disclose-personal-information">Why we collect, hold, use and disclose personal information</h2>
-<p><strong>Personal information</strong>: We collect, hold, use and disclose your personal information for the following purposes:</p>
-<ul>
-<li><p>to enable you to access and use our software, including to provide you with a login;</p>
-</li>
-<li><p>to assess whether to take you on as a new client, including to perform AHPRA registration checks and other background checks on you;</p>
-</li>
-<li><p>to work with you as a customer or supplier of our business, including to dispatch and deliver our products to you; </p>
-</li>
-<li><p>to contact and communicate with you about our business, including in response to any support requests you lodge with us or other enquiries you make with us;</p>
-</li>
-<li><p>to contact and communicate with you about any enquiries you make with us via any website we operate;</p>
-</li>
-<li><p>for internal record keeping, administrative, invoicing and billing purposes;</p>
-</li>
-<li><p>for analytics, market research and business development, including to operate and improve our business, associated applications and associated social media platforms;</p>
-</li>
-<li><p>for advertising and marketing, including to send you promotional information about our events and experiences and information that we consider may be of interest to you;</p>
-</li>
-<li><p>to run promotions, competitions and/or offer additional benefits to you;</p>
-</li>
-<li><p>if you have applied for employment with us, to consider your employment application; and</p>
-</li>
-<li><p>to comply with our legal obligations or if otherwise required or authorised by law.</p>
-</li>
-</ul>
-<p><strong>Sensitive information</strong>: We only collect, hold, use and disclose sensitive information for the following purposes:</p>
-<ul>
-<li><p>any purposes you consent to;</p>
-</li>
-<li><p>the primary purpose for which it is collected;</p>
-</li>
-<li><p>secondary purposes that are directly related to the primary purpose for which it was collected, including disclosure to the below listed third parties as reasonably necessary to work with you as a customer or supplier of our business; </p>
-</li>
-<li><p>to contact emergency services, or to speak with your family, partner or support person where we reasonably believe there is a serious risk to the life, health or safety of you or another person and it is impracticable for us to obtain your consent; and</p>
-</li>
-<li><p>if otherwise required or authorised by law.</p>
-</li>
-</ul>
-<p><strong>Credit information</strong>: We may collect, hold, use and disclose credit information and credit eligibility information for the following purposes:</p>
-<ul>
-<li><p>verifying your identity;</p>
-</li>
-<li><p>obtaining credit information from credit reporting bodies;</p>
-</li>
-<li><p>assessing your application for credit (or assessing your application to be a guarantor in relation to such credit); </p>
-</li>
-<li><p>assessing your credit worthiness, including collecting your payment history in relation to any credit provided by us to you;</p>
-</li>
-<li><p>enforcing our rights against you or your guarantors for repayment of any amount owed by you to us; </p>
-</li>
-<li><p>work with you as a customer or supplier of our business;</p>
-</li>
-<li><p>administering your account, including for internal record keeping, administrative, invoicing and billing purposes; </p>
-</li>
-<li><p>dealing with complaints or issues you may have in relation to our business;</p>
-</li>
-<li><p>complying with our legal obligations and resolving any disputes that we may have; and</p>
-</li>
-<li><p>if otherwise required or authorised by law.</p>
-</li>
-</ul>
-<h2 id="our-disclosures-of-personal-information-to-third-parties">Our disclosures of personal information to third parties</h2>
-<p><strong>Personal information</strong>: We will only disclose personal information (excluding sensitive information) to third parties where it is necessary as part of our business, where we have your consent, or where permitted by law. This means that we may disclose personal information (excluding sensitive information) to:</p>
-<ul>
-<li><p>our employees, contractors and/or related entities;</p>
-</li>
-<li><p>manufacturers and suppliers of the products we supply to you; </p>
-</li>
-<li><p>IT service providers, data storage, web-hosting and server providers;</p>
-</li>
-<li><p>marketing or advertising providers;</p>
-</li>
-<li><p>delivery or logistics providers who deliver our goods to you;</p>
-</li>
-<li><p>professional advisors, bankers, auditors, our insurers and insurance brokers;</p>
-</li>
-<li><p>payment systems operators or processors;</p>
-</li>
-<li><p>our existing or potential agents or business partners;</p>
-</li>
-<li><p>if we merge with, or are acquired by, another company, or sell all or a portion of our assets, your personal information may be disclosed to our advisers and any prospective purchaser’s advisers and may be among the assets transferred;</p>
-</li>
-<li><p>courts, tribunals and regulatory authorities, in the event you fail to pay for goods or services we have provided to you;</p>
-</li>
-<li><p>courts, tribunals, regulatory authorities and law enforcement officers, as required or authorised by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights;</p>
-</li>
-<li><p>third parties to collect and process data, such as analytics providers and cookies; and</p>
-</li>
-<li><p>any other third parties as required or permitted by law, such as where we receive a subpoena.</p>
-</li>
-</ul>
-<p><strong>Sensitive information</strong>: We will only disclose sensitive information with your consent or where permitted by law. This means that we may disclose sensitive information to:</p>
-<ul>
-<li><p>our employees, contractors and/or related entities;</p>
-</li>
-<li><p>IT service providers, data storage, web-hosting and server providers;</p>
-</li>
-<li><p>professional advisors;</p>
-</li>
-<li><p>if we merge with, or are acquired by, another company, or sell all or a portion of our assets, your personal information may be disclosed to our advisers and any prospective purchaser’s advisers and may be among the assets transferred;</p>
-</li>
-<li><p>courts, tribunals, regulatory authorities and law enforcement officers, as required or authorised by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights;</p>
-</li>
-<li><p>third parties to collect and process data, such as analytics providers and cookies; and</p>
-</li>
-<li><p>any other third parties as required or permitted by law, such as where we receive a subpoena.</p>
-</li>
-</ul>
-<p><strong>Credit information</strong>: We will only disclose your credit information to third parties where it is necessary as part of our business, where we have your consent, or where permitted by law. This means that we may disclose credit information to:</p>
-<ul>
-<li><p>other credit providers to allow them to determine your financial arrangements with us;</p>
-</li>
-<li><p>potential guarantors to allow them to consider whether to offer to act as a guarantor in relation to a credit or to offer property as security for credit;</p>
-</li>
-<li><p>guarantors, to exercise our rights against guarantors;</p>
-</li>
-<li><p>IT service providers, data storage, web-hosting and server providers;</p>
-</li>
-<li><p>payment systems operators, debt collectors or other service providers who may assist us in securing a debt and professional advisors;</p>
-</li>
-<li><p>our employees, contractors and/or related entities;</p>
-</li>
-<li><p>our existing or potential agents or business partners;</p>
-</li>
-<li><p>if we merge with, or are acquired by, another company, or sell all or a portion of our assets, your personal information may be disclosed to our advisers and any prospective purchaser’s advisers and may be among the assets transferred;</p>
-</li>
-<li><p>courts, tribunals and regulatory authorities, in the event you fail to pay for goods or services we have provided to you;</p>
-</li>
-<li><p>courts, tribunals, regulatory authorities and law enforcement officers, as required or authorised by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights; </p>
-</li>
-<li><p>any other third parties where you have consented; and </p>
-</li>
-<li><p>as required or permitted by law, such as where we receive a subpoena.</p>
-</li>
-</ul>
-<h2 id="overseas-disclosure">Overseas disclosure</h2>
-<p><strong>Personal Information</strong>: We store your personal information in Australia and in countries outside Australia including the United Kingdom, the European Union and the United States. Where we disclose your personal information to third parties, those third parties may store, transfer or access personal information outside of Australia. We will only disclose your personal information overseas in accordance with the Australian Privacy Principles.</p>
-<p><strong>Credit Information</strong>: We are not likely to disclose credit information to individuals or entities that do not have an Australian link. If we do disclose credit information to individuals or entities that do not have an Australian link, we will update this Privacy and Credit Information Policy to provide details of the countries in which these entities are located.</p>
-<h2 id="your-rights-and-controlling-your-personal-information">Your rights and controlling your personal information</h2>
-<p><strong>Your choice</strong>: Please read this Privacy and Credit Information Policy carefully. If you provide personal information to us, you understand we will collect, hold, use and disclose your personal information in accordance with this Privacy and Credit Information Policy. You do not have to provide personal information to us, however, if you do not, it may affect our ability to work with you as a customer or supplier of our business.</p>
-<p><strong>Information from third parties</strong>: If we receive personal information about you from a third party, we will protect it as set out in this Privacy and Credit Information Policy. If you are a third party providing personal information about somebody else, you represent and warrant that you have such person’s consent to provide the personal information to us. </p>
-<p><strong>Restrict and unsubscribe</strong>: To object to processing for direct marketing/unsubscribe from our email database or opt-out of communications (including marketing communications), please contact us using the details below or opt-out using the opt-out facilities provided in the communication.</p>
-<p><strong>Access</strong>: You may request access to the personal information that we hold about you. An administrative fee may be payable for the provision of such information. Please note, in some situations, we may be legally permitted to withhold access to your personal information. If we cannot provide access to your information, we will advise you as soon as reasonably possible and provide you with the reasons for our refusal and any mechanism available to complain about the refusal. If we can provide access to your information in another form that still meets your needs, then we will take reasonable steps to give you such access.</p>
-<p><strong>Correction</strong>: If you believe that any information we hold about you is inaccurate, out of date, incomplete, irrelevant or misleading, please contact us using the details below. We will take reasonable steps to promptly correct any information found to be inaccurate, out of date, incomplete, irrelevant or misleading. Please note, in some situations, we may be legally permitted to not correct your personal information. If we cannot correct your information, we will advise you as soon as reasonably possible and provide you with the reasons for our refusal and any mechanism available to complain about the refusal.</p>
-<p><strong>Complaints</strong>: If you wish to make a complaint, please contact us using the details below and provide us with full details of the complaint. We will promptly investigate your complaint and respond to you, in writing, setting out the outcome of our investigation and the steps we will take in response to your complaint. If you are not satisfied with our response, you may contact the Office of the Australian Information Commissioner.</p>
-<h2 id="storage-and-security">Storage and security</h2>
-<p>We are committed to ensuring that the personal information we collect is secure. In order to prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures, to safeguard and secure personal information and protect it from misuse, interference, loss and unauthorised access, modification and disclosure.</p>
-<p>While we are committed to security, we cannot guarantee the security of any information that is transmitted to or by us over the Internet. The transmission and exchange of information is carried out at your own risk. </p>
-<h2 id="user-generated-content">User-Generated Content</h2>
-<p>We may enable you to post reviews, comments, photos and other user-generated content. Any content you choose to submit will be accessible by anyone, including third parties not associated with us. We have no control over how others may use or misuse information you make publicly available. We are not responsible for the privacy, security or accuracy of any user-generated content you choose to post or for the use or misuse of that information by any third parties.</p>
-<h2 id="cookies-and-analytics">Cookies and Analytics</h2>
-<p>We may use cookies, tracking pixels and similar technologies on our website and in our emails from time to time. Cookies are text files placed in your computer&#39;s browser to store your preferences. Tracking pixels are tiny, invisible images (typically the size of one pixel) embedded in web pages or emails. Cookies and tracking pixels, by themselves, do not tell us your email address or other personally identifiable information. However, they do recognise you when you return to our online website and allow third parties to cause our advertisements to appear on your social media and online media feeds as part of our retargeting campaigns. If and when you choose to provide our online website with personal information, this information may be linked to the data stored in the cookie or collected by tracking pixels. Unlike cookies, tracking pixels do not store any information on your device, but instead send information to our servers when the pixel is loaded.</p>
-<p>You can block cookies by activating the setting on your browser that allows you to refuse the setting of all or some cookies. You can block tracking pixels by using ad-blocking or privacy-focused browser extensions. Some email providers allow you to block images by default, which can prevent tracking pixels in emails from loading. However, if you use your browser settings to block all cookies (including essential cookies) and tracking pixels you may not be able to access all or parts of our website and you may not receive personalised content.</p>
-<p><strong>Google Analytics</strong>: We may use Google Analytics Advertising Features. We and third-party vendors may use first-party cookies (such as the Google Analytics cookie) or other first-party identifiers, and third-party cookies (such as Google advertising cookies) or other third-party identifiers together. These cookies and identifiers may collect Technical and Usage Data about you. You can opt-out of Google Analytics Advertising Features including using a <a href="https://tools.google.com/dlpage/gaoptout/">Google Analytics Opt-out Browser add-on</a>. To opt-out of personalised ad delivery on the Google content network, please visit Google’s <a href="http://www.google.com/ads/preferences">My Ads Centre</a> or if you wish to opt-out permanently even when all cookies are deleted from your browser you can install their plugin <a href="https://support.google.com/ads/answer/7395996">here</a>.  To opt out of interest-based ads on mobile devices, please follow these instructions for your mobile device: On android open the Google Settings app on your device and select “ads” to control the settings. On iOS devices with iOS 6 and above use Apple’s advertising identifier. To learn more about limiting ad tracking using this identifier, visit the settings menu on your device. To find out how Google uses data when you use third party websites or applications, please see <a href="https://policies.google.com/technologies/partner-sites">their policy</a>. </p>
-<p><strong>Facebook/Meta Analytics</strong>: We may use tools provided by Meta, such as the Meta Pixel, advanced matching, and Conversions API. These allow us to measure ad performance and deliver ads that may be relevant to you on Meta platforms based on your activity on our website/app. You can control whether we can join data from third party partners with your Meta account for ads by adjusting your preferences within Meta&#39;s settings. You can disconnect this data from your Meta account by changing your settings for <a href="https://www.facebook.com/help/1224342157705160">Off-Facebook activity</a>. For more information, please see <a href="https://www.facebook.com/privacy/policy/">Meta&#39;s Privacy Policy</a>.</p>
-<h2 id="links-to-other-websites">Links to other websites</h2>
-<p>Our website may contain links to other party’s websites. We do not have any control over those websites and we are not responsible for the protection and privacy of any personal information which you provide whilst visiting those websites. Those websites are not governed by this Privacy and Credit Information Policy.</p>
-<h2 id="use-of-artificial-intelligence-ai-">Use of Artificial Intelligence (AI)</h2>
-<p><strong>Overview</strong>: We may use artificial intelligence and machine learning technologies, including AI Technologies provided by third parties (<strong>AI Technologies</strong>) in our business operations and the provision of our Services. We will only use AI Technologies when legally permitted and necessary for our business operations. </p>
-<p><strong>How we use AI Technologies</strong>: We may use AI Technologies for the following purposes: </p>
-<ul>
-<li><p>to conduct analysis and processing; </p>
-</li>
-<li><p>to generate and modify content and coding;</p>
-</li>
-<li><p>to improve and optimise our services and operations;</p>
-</li>
-<li><p>to automate certain processes and communications, such as routine tasks;</p>
-</li>
-<li><p>to personalise your experience with our services; </p>
-</li>
-<li><p>for quality assurance purposes; and </p>
-</li>
-<li><p>to assisting with customer support and queries.</p>
-</li>
-</ul>
-<p><strong>Data Protection and Security</strong>: Where we use service providers who provide AI Technologies to us, we will take reasonable steps to ensure that such service providers handle your personal information according to privacy law, including by ensuring that we have contracts in place requiring the service provider to protect personal information. We will not input your personal information into any platform provided by an AI Technology service provider which then trains its model based on that information.</p>
-<p><strong>Your Rights and our Commitments</strong>: We will treat information generated or inferred by the AI Technologies about individuals as personal information and you maintain all rights over your personal information as outlined in this privacy policy, regardless of whether AI Technologies are used in processing. When using AI Technologies with your personal information:</p>
-<ul>
-<li><p><strong>Transparency and control</strong>: we will inform you when AI Technologies are being used to make decisions that may significantly affect you. We will implement processes to verify the accuracy of AI-generated outputs and we will take reasonable steps to maintain human oversight and review of significant AI-generated decisions. Our staff are trained to understand the limitations of AI systems and verify outputs before they are relied upon; and </p>
-</li>
-<li><p><strong>Security</strong>: we implement appropriate technical and organisational measures to ensure that our use of AI Technologies maintains the security and integrity of your personal information. This includes regular testing and monitoring of AI outputs for accuracy and reliability; and</p>
-</li>
-<li><p><strong>Risk mitigation</strong>: We regularly assess and document the risks associated with our use of AI Technologies in processing personal information and implement appropriate mitigation measures. This includes ongoing monitoring of AI Technologies and regular reviews of their performance and impact.</p>
-</li>
-</ul>
-<h2 id="amendments">Amendments</h2>
-<p>We may, at any time and at our discretion, vary this Privacy and Credit Information Policy by publishing the amended Privacy and Credit Information Policy on our website. We recommend you check our website regularly to ensure you are aware of our current Privacy and Credit Information Policy.</p>
-<p>For any questions or notices, please contact us by email at legal @ pivotwholesale.com.au</p>
-<p>Pivot Wholesale Pty Ltd  (ABN 73 683 108 750)</p>
+        <h1 id="privacy-and-credit-information-policy">PRIVACY AND CREDIT INFORMATION POLICY</h1>
+        <p>Pivot Wholesale Pty Ltd (ABN 73 683 108 750) (<strong>we</strong>, <strong>us</strong> or
+                <strong>our</strong>), understands that protecting your personal information is important. This Privacy
+                and Credit Information Policy sets out our commitment to protecting the privacy of personal information
+                provided to us, or collected by us, when interacting with you. </p>
+        <h2 id="the-information-we-collect">The information we collect</h2>
+        <p><strong>Personal information</strong>: is information or an opinion, whether true or not and whether recorded
+                in a material form or not, about an individual who is identified or reasonably identifiable. The types
+                of personal information we may collect about you include:</p>
+        <ul>
+                <li>
+                        <p><strong>Identity Data</strong> including your name, age, profession, professional
+                                registration number and photographic identification. </p>
+                </li>
+                <li>
+                        <p><strong>Contact Data</strong> including your telephone number, address and email.</p>
+                </li>
+                <li>
+                        <p><strong>Financial Data</strong> including bank account and payment card details.</p>
+                </li>
+                <li>
+                        <p><strong>Background Verification Data</strong> including your government-issued identification
+                                details requested such as your AHPRA registration number, as part of our onboarding
+                                process to comply with our due diligence obligations, anti-money laundering laws and
+                                related ongoing monitoring commitments.</p>
+                </li>
+                <li>
+                        <p><strong>Transaction Data</strong> including details about payments to you from us and from
+                                you to us and other details of products and services you have purchased from us or we
+                                have purchased from you.</p>
+                </li>
+                <li>
+                        <p><strong>Technical and Usage Data</strong> when you access any of our websites, platforms or
+                                emails, details about your internet protocol (IP) address, login data, browser session
+                                and geo-location data, statistics on page views and sessions, device and network
+                                information, acquisition sources, search queries and/or browsing behaviour, access and
+                                use of our website (including through the use of Internet cookies, tracking pixels or
+                                analytics), and communications with our website.</p>
+                </li>
+                <li>
+                        <p><strong>Profile Data</strong> including your username and password for our portal, purchases
+                                or orders you have made with us, and support requests you have made. </p>
+                </li>
+                <li>
+                        <p><strong>Interaction Data</strong> including information you provide to us when you
+                                participate in any interactive features, including surveys, contests, promotions,
+                                activities or events. </p>
+                </li>
+                <li>
+                        <p><strong>Marketing and Communications Data</strong> including your preferences in receiving
+                                marketing from us and our third parties and your communication preferences.</p>
+                </li>
+                <li>
+                        <p><strong>Professional Data</strong> including where you are a worker of ours or applying for a
+                                role with us, your professional history such as your previous positions and professional
+                                experience, or whether you hold required authorisations or licences. </p>
+                </li>
+        </ul>
+        <p><strong>Sensitive information</strong> is a sub-set of personal information that is given a higher level of
+                protection. Sensitive information means information relating to your racial or ethnic origin, political
+                opinions, religion, trade union or other professional associations or memberships, philosophical
+                beliefs, sexual orientation or practices, criminal records, health information or biometric information.
+                The types of sensitive information we collect include:</p>
+        <ul>
+                <li>
+                        <p>where you apply for a role with us: results of criminal records checks and your professional
+                                registrations and associations (where applicable);</p>
+                </li>
+                <li>
+                        <p>where you or the pharmacy you represent has an account with us, your professional
+                                registration details as a pharmacist</p>
+                </li>
+        </ul>
+        <p><strong>Credit Information</strong>: is a term used throughout this Privacy and Credit Information Policy and
+                refers to “credit information” and “credit eligibility information” as these terms are defined in the
+                Privacy Act 1988 (Cth) (<strong>Privacy Act</strong>). </p>
+        <p>The types of “credit information” we may collect about you include:</p>
+        <ul>
+                <li>
+                        <p>your name, address, contact number and email address;</p>
+                </li>
+                <li>
+                        <p>the fact that you applied for credit from us;</p>
+                </li>
+                <li>
+                        <p>the amount of credit applied for by you </p>
+                </li>
+                <li>
+                        <p>the amount of credit provided to you by us (if any);</p>
+                </li>
+                <li>
+                        <p>the terms of payment of credit provided to you by us, including any credit term;</p>
+                </li>
+                <li>
+                        <p>details of your payment history, including details of any default of payment by you;</p>
+                </li>
+                <li>
+                        <p>information regarding credit that was provided to you that has otherwise been discharged;</p>
+                </li>
+                <li>
+                        <p>information retrieved from any credit referees; </p>
+                </li>
+                <li>
+                        <p>information regarding your personal insolvency; and</p>
+                </li>
+                <li>
+                        <p>information about your involvement in any court proceedings.</p>
+                </li>
+        </ul>
+        <p>The types of “credit eligibility information” we may collect about you from a credit reporting body include a
+                credit report and a credit assessment score.</p>
+        <h2 id="how-we-collect-personal-information">How we collect personal information</h2>
+        <p>We collect personal information in a variety of ways, including:</p>
+        <ul>
+                <li>
+                        <p>when you provide it directly to us, including face-to-face, over the phone, over email, or
+                                online;</p>
+                </li>
+                <li>
+                        <p>when you complete a form, such as registering for any events or newsletters, or responding to
+                                surveys;</p>
+                </li>
+                <li>
+                        <p>when you use any website we operate (including from any analytics and cookie providers or
+                                marketing providers. See the “Cookies” section below for more detail on the use of
+                                cookies); </p>
+                </li>
+                <li>
+                        <p>from third parties, such as your employer or the pharmacy you represent; </p>
+                </li>
+                <li>
+                        <p>from publicly available sources.</p>
+                </li>
+        </ul>
+        <p>We collect credit information in a variety of ways, including:</p>
+        <ul>
+                <li>
+                        <p>when you provide it directly to us, including through your completion of any credit
+                                application form provided by us or you entering an agreement with us for the supply of
+                                goods and/or services;</p>
+                </li>
+                <li>
+                        <p>when you make payment of any amount of credit provided by us; or</p>
+                </li>
+                <li>
+                        <p>from third parties, such as credit reporting bodies or from other credit providers, including
+                                any credit referees provided by you.</p>
+                </li>
+        </ul>
+        <h2 id="why-we-collect-hold-use-and-disclose-personal-information">Why we collect, hold, use and disclose
+                personal information</h2>
+        <p><strong>Personal information</strong>: We collect, hold, use and disclose your personal information for the
+                following purposes:</p>
+        <ul>
+                <li>
+                        <p>to enable you to access and use our software, including to provide you with a login;</p>
+                </li>
+                <li>
+                        <p>to assess whether to take you on as a new client, including to perform AHPRA registration
+                                checks and other background checks on you;</p>
+                </li>
+                <li>
+                        <p>to work with you as a customer or supplier of our business, including to dispatch and deliver
+                                our products to you; </p>
+                </li>
+                <li>
+                        <p>to contact and communicate with you about our business, including in response to any support
+                                requests you lodge with us or other enquiries you make with us;</p>
+                </li>
+                <li>
+                        <p>to contact and communicate with you about any enquiries you make with us via any website we
+                                operate;</p>
+                </li>
+                <li>
+                        <p>for internal record keeping, administrative, invoicing and billing purposes;</p>
+                </li>
+                <li>
+                        <p>for analytics, market research and business development, including to operate and improve our
+                                business, associated applications and associated social media platforms;</p>
+                </li>
+                <li>
+                        <p>for advertising and marketing, including to send you promotional information about our events
+                                and experiences and information that we consider may be of interest to you;</p>
+                </li>
+                <li>
+                        <p>to run promotions, competitions and/or offer additional benefits to you;</p>
+                </li>
+                <li>
+                        <p>if you have applied for employment with us, to consider your employment application; and</p>
+                </li>
+                <li>
+                        <p>to comply with our legal obligations or if otherwise required or authorised by law.</p>
+                </li>
+        </ul>
+        <p><strong>Sensitive information</strong>: We only collect, hold, use and disclose sensitive information for the
+                following purposes:</p>
+        <ul>
+                <li>
+                        <p>any purposes you consent to;</p>
+                </li>
+                <li>
+                        <p>the primary purpose for which it is collected;</p>
+                </li>
+                <li>
+                        <p>secondary purposes that are directly related to the primary purpose for which it was
+                                collected, including disclosure to the below listed third parties as reasonably
+                                necessary to work with you as a customer or supplier of our business; </p>
+                </li>
+                <li>
+                        <p>to contact emergency services, or to speak with your family, partner or support person where
+                                we reasonably believe there is a serious risk to the life, health or safety of you or
+                                another person and it is impracticable for us to obtain your consent; and</p>
+                </li>
+                <li>
+                        <p>if otherwise required or authorised by law.</p>
+                </li>
+        </ul>
+        <p><strong>Credit information</strong>: We may collect, hold, use and disclose credit information and credit
+                eligibility information for the following purposes:</p>
+        <ul>
+                <li>
+                        <p>verifying your identity;</p>
+                </li>
+                <li>
+                        <p>obtaining credit information from credit reporting bodies;</p>
+                </li>
+                <li>
+                        <p>assessing your application for credit (or assessing your application to be a guarantor in
+                                relation to such credit); </p>
+                </li>
+                <li>
+                        <p>assessing your credit worthiness, including collecting your payment history in relation to
+                                any credit provided by us to you;</p>
+                </li>
+                <li>
+                        <p>enforcing our rights against you or your guarantors for repayment of any amount owed by you
+                                to us; </p>
+                </li>
+                <li>
+                        <p>work with you as a customer or supplier of our business;</p>
+                </li>
+                <li>
+                        <p>administering your account, including for internal record keeping, administrative, invoicing
+                                and billing purposes; </p>
+                </li>
+                <li>
+                        <p>dealing with complaints or issues you may have in relation to our business;</p>
+                </li>
+                <li>
+                        <p>complying with our legal obligations and resolving any disputes that we may have; and</p>
+                </li>
+                <li>
+                        <p>if otherwise required or authorised by law.</p>
+                </li>
+        </ul>
+        <h2 id="our-disclosures-of-personal-information-to-third-parties">Our disclosures of personal information to
+                third parties</h2>
+        <p><strong>Personal information</strong>: We will only disclose personal information (excluding sensitive
+                information) to third parties where it is necessary as part of our business, where we have your consent,
+                or where permitted by law. This means that we may disclose personal information (excluding sensitive
+                information) to:</p>
+        <ul>
+                <li>
+                        <p>our employees, contractors and/or related entities;</p>
+                </li>
+                <li>
+                        <p>manufacturers and suppliers of the products we supply to you; </p>
+                </li>
+                <li>
+                        <p>IT service providers, data storage, web-hosting and server providers;</p>
+                </li>
+                <li>
+                        <p>marketing or advertising providers;</p>
+                </li>
+                <li>
+                        <p>delivery or logistics providers who deliver our goods to you;</p>
+                </li>
+                <li>
+                        <p>professional advisors, bankers, auditors, our insurers and insurance brokers;</p>
+                </li>
+                <li>
+                        <p>payment systems operators or processors;</p>
+                </li>
+                <li>
+                        <p>our existing or potential agents or business partners;</p>
+                </li>
+                <li>
+                        <p>if we merge with, or are acquired by, another company, or sell all or a portion of our
+                                assets, your personal information may be disclosed to our advisers and any prospective
+                                purchaser’s advisers and may be among the assets transferred;</p>
+                </li>
+                <li>
+                        <p>courts, tribunals and regulatory authorities, in the event you fail to pay for goods or
+                                services we have provided to you;</p>
+                </li>
+                <li>
+                        <p>courts, tribunals, regulatory authorities and law enforcement officers, as required or
+                                authorised by law, in connection with any actual or prospective legal proceedings, or in
+                                order to establish, exercise or defend our legal rights;</p>
+                </li>
+                <li>
+                        <p>third parties to collect and process data, such as analytics providers and cookies; and</p>
+                </li>
+                <li>
+                        <p>any other third parties as required or permitted by law, such as where we receive a subpoena.
+                        </p>
+                </li>
+        </ul>
+        <p><strong>Sensitive information</strong>: We will only disclose sensitive information with your consent or
+                where permitted by law. This means that we may disclose sensitive information to:</p>
+        <ul>
+                <li>
+                        <p>our employees, contractors and/or related entities;</p>
+                </li>
+                <li>
+                        <p>IT service providers, data storage, web-hosting and server providers;</p>
+                </li>
+                <li>
+                        <p>professional advisors;</p>
+                </li>
+                <li>
+                        <p>if we merge with, or are acquired by, another company, or sell all or a portion of our
+                                assets, your personal information may be disclosed to our advisers and any prospective
+                                purchaser’s advisers and may be among the assets transferred;</p>
+                </li>
+                <li>
+                        <p>courts, tribunals, regulatory authorities and law enforcement officers, as required or
+                                authorised by law, in connection with any actual or prospective legal proceedings, or in
+                                order to establish, exercise or defend our legal rights;</p>
+                </li>
+                <li>
+                        <p>third parties to collect and process data, such as analytics providers and cookies; and</p>
+                </li>
+                <li>
+                        <p>any other third parties as required or permitted by law, such as where we receive a subpoena.
+                        </p>
+                </li>
+        </ul>
+        <p><strong>Credit information</strong>: We will only disclose your credit information to third parties where it
+                is necessary as part of our business, where we have your consent, or where permitted by law. This means
+                that we may disclose credit information to:</p>
+        <ul>
+                <li>
+                        <p>other credit providers to allow them to determine your financial arrangements with us;</p>
+                </li>
+                <li>
+                        <p>potential guarantors to allow them to consider whether to offer to act as a guarantor in
+                                relation to a credit or to offer property as security for credit;</p>
+                </li>
+                <li>
+                        <p>guarantors, to exercise our rights against guarantors;</p>
+                </li>
+                <li>
+                        <p>IT service providers, data storage, web-hosting and server providers;</p>
+                </li>
+                <li>
+                        <p>payment systems operators, debt collectors or other service providers who may assist us in
+                                securing a debt and professional advisors;</p>
+                </li>
+                <li>
+                        <p>our employees, contractors and/or related entities;</p>
+                </li>
+                <li>
+                        <p>our existing or potential agents or business partners;</p>
+                </li>
+                <li>
+                        <p>if we merge with, or are acquired by, another company, or sell all or a portion of our
+                                assets, your personal information may be disclosed to our advisers and any prospective
+                                purchaser’s advisers and may be among the assets transferred;</p>
+                </li>
+                <li>
+                        <p>courts, tribunals and regulatory authorities, in the event you fail to pay for goods or
+                                services we have provided to you;</p>
+                </li>
+                <li>
+                        <p>courts, tribunals, regulatory authorities and law enforcement officers, as required or
+                                authorised by law, in connection with any actual or prospective legal proceedings, or in
+                                order to establish, exercise or defend our legal rights; </p>
+                </li>
+                <li>
+                        <p>any other third parties where you have consented; and </p>
+                </li>
+                <li>
+                        <p>as required or permitted by law, such as where we receive a subpoena.</p>
+                </li>
+        </ul>
+        <h2 id="overseas-disclosure">Overseas disclosure</h2>
+        <p><strong>Personal Information</strong>: We store your personal information in Australia and in countries
+                outside Australia including the United Kingdom, the European Union and the United States. Where we
+                disclose your personal information to third parties, those third parties may store, transfer or access
+                personal information outside of Australia. We will only disclose your personal information overseas in
+                accordance with the Australian Privacy Principles.</p>
+        <p><strong>Credit Information</strong>: We are not likely to disclose credit information to individuals or
+                entities that do not have an Australian link. If we do disclose credit information to individuals or
+                entities that do not have an Australian link, we will update this Privacy and Credit Information Policy
+                to provide details of the countries in which these entities are located.</p>
+        <h2 id="your-rights-and-controlling-your-personal-information">Your rights and controlling your personal
+                information</h2>
+        <p><strong>Your choice</strong>: Please read this Privacy and Credit Information Policy carefully. If you
+                provide personal information to us, you understand we will collect, hold, use and disclose your personal
+                information in accordance with this Privacy and Credit Information Policy. You do not have to provide
+                personal information to us, however, if you do not, it may affect our ability to work with you as a
+                customer or supplier of our business.</p>
+        <p><strong>Information from third parties</strong>: If we receive personal information about you from a third
+                party, we will protect it as set out in this Privacy and Credit Information Policy. If you are a third
+                party providing personal information about somebody else, you represent and warrant that you have such
+                person’s consent to provide the personal information to us. </p>
+        <p><strong>Restrict and unsubscribe</strong>: To object to processing for direct marketing/unsubscribe from our
+                email database or opt-out of communications (including marketing communications), please contact us
+                using the details below or opt-out using the opt-out facilities provided in the communication.</p>
+        <p><strong>Access</strong>: You may request access to the personal information that we hold about you. An
+                administrative fee may be payable for the provision of such information. Please note, in some
+                situations, we may be legally permitted to withhold access to your personal information. If we cannot
+                provide access to your information, we will advise you as soon as reasonably possible and provide you
+                with the reasons for our refusal and any mechanism available to complain about the refusal. If we can
+                provide access to your information in another form that still meets your needs, then we will take
+                reasonable steps to give you such access.</p>
+        <p><strong>Correction</strong>: If you believe that any information we hold about you is inaccurate, out of
+                date, incomplete, irrelevant or misleading, please contact us using the details below. We will take
+                reasonable steps to promptly correct any information found to be inaccurate, out of date, incomplete,
+                irrelevant or misleading. Please note, in some situations, we may be legally permitted to not correct
+                your personal information. If we cannot correct your information, we will advise you as soon as
+                reasonably possible and provide you with the reasons for our refusal and any mechanism available to
+                complain about the refusal.</p>
+        <p><strong>Complaints</strong>: If you wish to make a complaint, please contact us using the details below and
+                provide us with full details of the complaint. We will promptly investigate your complaint and respond
+                to you, in writing, setting out the outcome of our investigation and the steps we will take in response
+                to your complaint. If you are not satisfied with our response, you may contact the Office of the
+                Australian Information Commissioner.</p>
+        <h2 id="storage-and-security">Storage and security</h2>
+        <p>We are committed to ensuring that the personal information we collect is secure. In order to prevent
+                unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial
+                procedures, to safeguard and secure personal information and protect it from misuse, interference, loss
+                and unauthorised access, modification and disclosure.</p>
+        <p>While we are committed to security, we cannot guarantee the security of any information that is transmitted
+                to or by us over the Internet. The transmission and exchange of information is carried out at your own
+                risk. </p>
+        <h2 id="user-generated-content">User-Generated Content</h2>
+        <p>We may enable you to post reviews, comments, photos and other user-generated content. Any content you choose
+                to submit will be accessible by anyone, including third parties not associated with us. We have no
+                control over how others may use or misuse information you make publicly available. We are not
+                responsible for the privacy, security or accuracy of any user-generated content you choose to post or
+                for the use or misuse of that information by any third parties.</p>
+        <h2 id="cookies-and-analytics">Cookies and Analytics</h2>
+        <p>We may use cookies, tracking pixels and similar technologies on our website and in our emails from time to
+                time. Cookies are text files placed in your computer&#39;s browser to store your preferences. Tracking
+                pixels are tiny, invisible images (typically the size of one pixel) embedded in web pages or emails.
+                Cookies and tracking pixels, by themselves, do not tell us your email address or other personally
+                identifiable information. However, they do recognise you when you return to our online website and allow
+                third parties to cause our advertisements to appear on your social media and online media feeds as part
+                of our retargeting campaigns. If and when you choose to provide our online website with personal
+                information, this information may be linked to the data stored in the cookie or collected by tracking
+                pixels. Unlike cookies, tracking pixels do not store any information on your device, but instead send
+                information to our servers when the pixel is loaded.</p>
+        <p>You can block cookies by activating the setting on your browser that allows you to refuse the setting of all
+                or some cookies. You can block tracking pixels by using ad-blocking or privacy-focused browser
+                extensions. Some email providers allow you to block images by default, which can prevent tracking pixels
+                in emails from loading. However, if you use your browser settings to block all cookies (including
+                essential cookies) and tracking pixels you may not be able to access all or parts of our website and you
+                may not receive personalised content.</p>
+        <p><strong>Google Analytics</strong>: We may use Google Analytics Advertising Features. We and third-party
+                vendors may use first-party cookies (such as the Google Analytics cookie) or other first-party
+                identifiers, and third-party cookies (such as Google advertising cookies) or other third-party
+                identifiers together. These cookies and identifiers may collect Technical and Usage Data about you. You
+                can opt-out of Google Analytics Advertising Features including using a <a
+                        href="https://tools.google.com/dlpage/gaoptout/">Google Analytics Opt-out Browser add-on</a>. To
+                opt-out of personalised ad delivery on the Google content network, please visit Google’s <a
+                        href="http://www.google.com/ads/preferences">My Ads Centre</a> or if you wish to opt-out
+                permanently even when all cookies are deleted from your browser you can install their plugin <a
+                        href="https://support.google.com/ads/answer/7395996">here</a>. To opt out of interest-based ads
+                on mobile devices, please follow these instructions for your mobile device: On android open the Google
+                Settings app on your device and select “ads” to control the settings. On iOS devices with iOS 6 and
+                above use Apple’s advertising identifier. To learn more about limiting ad tracking using this
+                identifier, visit the settings menu on your device. To find out how Google uses data when you use third
+                party websites or applications, please see <a
+                        href="https://policies.google.com/technologies/partner-sites">their policy</a>. </p>
+        <p><strong>Facebook/Meta Analytics</strong>: We may use tools provided by Meta, such as the Meta Pixel, advanced
+                matching, and Conversions API. These allow us to measure ad performance and deliver ads that may be
+                relevant to you on Meta platforms based on your activity on our website/app. You can control whether we
+                can join data from third party partners with your Meta account for ads by adjusting your preferences
+                within Meta&#39;s settings. You can disconnect this data from your Meta account by changing your
+                settings for <a href="https://www.facebook.com/help/1224342157705160">Off-Facebook activity</a>. For
+                more information, please see <a href="https://www.facebook.com/privacy/policy/">Meta&#39;s Privacy
+                        Policy</a>.</p>
+        <h2 id="links-to-other-websites">Links to other websites</h2>
+        <p>Our website may contain links to other party’s websites. We do not have any control over those websites and
+                we are not responsible for the protection and privacy of any personal information which you provide
+                whilst visiting those websites. Those websites are not governed by this Privacy and Credit Information
+                Policy.</p>
+        <h2 id="use-of-artificial-intelligence-ai-">Use of Artificial Intelligence (AI)</h2>
+        <p><strong>Overview</strong>: We may use artificial intelligence and machine learning technologies, including AI
+                Technologies provided by third parties (<strong>AI Technologies</strong>) in our business operations and
+                the provision of our Services. We will only use AI Technologies when legally permitted and necessary for
+                our business operations. </p>
+        <p><strong>How we use AI Technologies</strong>: We may use AI Technologies for the following purposes: </p>
+        <ul>
+                <li>
+                        <p>to conduct analysis and processing; </p>
+                </li>
+                <li>
+                        <p>to generate and modify content and coding;</p>
+                </li>
+                <li>
+                        <p>to improve and optimise our services and operations;</p>
+                </li>
+                <li>
+                        <p>to automate certain processes and communications, such as routine tasks;</p>
+                </li>
+                <li>
+                        <p>to personalise your experience with our services; </p>
+                </li>
+                <li>
+                        <p>for quality assurance purposes; and </p>
+                </li>
+                <li>
+                        <p>to assisting with customer support and queries.</p>
+                </li>
+        </ul>
+        <p><strong>Data Protection and Security</strong>: Where we use service providers who provide AI Technologies to
+                us, we will take reasonable steps to ensure that such service providers handle your personal information
+                according to privacy law, including by ensuring that we have contracts in place requiring the service
+                provider to protect personal information. We will not input your personal information into any platform
+                provided by an AI Technology service provider which then trains its model based on that information.</p>
+        <p><strong>Your Rights and our Commitments</strong>: We will treat information generated or inferred by the AI
+                Technologies about individuals as personal information and you maintain all rights over your personal
+                information as outlined in this privacy policy, regardless of whether AI Technologies are used in
+                processing. When using AI Technologies with your personal information:</p>
+        <ul>
+                <li>
+                        <p><strong>Transparency and control</strong>: we will inform you when AI Technologies are being
+                                used to make decisions that may significantly affect you. We will implement processes to
+                                verify the accuracy of AI-generated outputs and we will take reasonable steps to
+                                maintain human oversight and review of significant AI-generated decisions. Our staff are
+                                trained to understand the limitations of AI systems and verify outputs before they are
+                                relied upon; and </p>
+                </li>
+                <li>
+                        <p><strong>Security</strong>: we implement appropriate technical and organisational measures to
+                                ensure that our use of AI Technologies maintains the security and integrity of your
+                                personal information. This includes regular testing and monitoring of AI outputs for
+                                accuracy and reliability; and</p>
+                </li>
+                <li>
+                        <p><strong>Risk mitigation</strong>: We regularly assess and document the risks associated with
+                                our use of AI Technologies in processing personal information and implement appropriate
+                                mitigation measures. This includes ongoing monitoring of AI Technologies and regular
+                                reviews of their performance and impact.</p>
+                </li>
+        </ul>
+        <h2 id="amendments">Amendments</h2>
+        <p>We may, at any time and at our discretion, vary this Privacy and Credit Information Policy by publishing the
+                amended Privacy and Credit Information Policy on our website. We recommend you check our website
+                regularly to ensure you are aware of our current Privacy and Credit Information Policy.</p>
+        <p>For any questions or notices, please contact us by email at legal @ pivotwholesale.com.au</p>
+        <p>Pivot Wholesale Pty Ltd (ABN 73 683 108 750)</p>
+
+        <!-- Scripts -->
+        <script src="assets/js/main.js"></script>
 </body>
+
 </html>
